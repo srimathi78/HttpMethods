@@ -1,0 +1,21 @@
+<h1>this is for put and update method</h1>
+ <ul>
+    <li *ngFor="let details of list">{{details.id}}---{{details.author}}----{{details.title}}</li>
+  </ul>    
+ 
+<form #departmentForm="ngForm" (ngSubmit)="updateDep(departmentForm.value)">
+  <!-- <form> -->
+<input type="text" name="id"  placeholder="enter id"  ngModel>
+<input type="text" name="title"  placeholder="enter title"  ngModel>
+<input type="text" name="author"  placeholder="enter  author"  ngModel>
+<button>POST</button> 
+</form> 
+
+<button (click)="update(4)">put method update</button>
+<button (click)="delete(4)">id method delete</button>
+
+
+
+
+   
+
